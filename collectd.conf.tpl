@@ -25,6 +25,7 @@ LoadPlugin write_graphite
    Host "{{ GRAPHITE_HOST }}"
    Port "{{ GRAPHITE_PORT | default("2003") }}"
    Prefix "collectd."
+   Postfix "{{ POSTFIX | default("")}}"
    EscapeCharacter "_"
    SeparateInstances true
    StoreRates true
