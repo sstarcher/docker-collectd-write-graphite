@@ -22,3 +22,5 @@ Environment variables
 * `GRAPHITE_PORT`
   - Graphite port
   - Optional, defaults to 2003
+* `INSTANCE_ID`
+  - This is read from the AWS environment to give us a unique value for a cluster of servers
